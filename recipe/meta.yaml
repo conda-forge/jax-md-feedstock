@@ -1,5 +1,5 @@
 {% set name = "jax-md" %}
-{% set version = "0.1.12" %}
+{% set version = "0.1.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jax-md-{{ version }}.tar.gz
-  sha256: 4e29bb7c87fcff53402a77916a361f82ece9da6029d6b2ed661818f15fe01cfd
+  sha256: 793864a83f2bca0cb92e70f1fb769a4842948bd87f2f48f5e4e9c1bacee5a0c1
   patches:
     - setup.patch
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -45,7 +45,7 @@ about:
   license: Apache-2.0
   license_family: OTHER
   license_file: LICENSE
-  summary: 'Accelerated, Differentiable, Molecular Dynamics'
+  summary: Accelerated, Differentiable, Molecular Dynamics
   description: |
     Molecular dynamics is a workhorse of modern computational condensed 
     matter physics. It is frequently used to simulate materials to observe
