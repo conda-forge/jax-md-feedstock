@@ -1,5 +1,5 @@
 {% set name = "jax-md" %}
-{% set version = "0.1.14" %}
+{% set version = "0.1.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jax-md-{{ version }}.tar.gz
-  sha256: 746df33e642881f7230632f5dad253f5ba78619960b777857bf272d792bbd0d4
+  sha256: 1dade8a7f4eba2fde88452c88d4678bdf10f8b59d73a1544965f99e3f7601dbe
   patches:
     - setup.patch
 
