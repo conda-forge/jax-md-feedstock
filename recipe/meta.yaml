@@ -33,7 +33,6 @@ requirements:
 test:
   imports:
     - jax_md
-    - jax_md.colab_tools
   commands:
     - pip check
   requires:
