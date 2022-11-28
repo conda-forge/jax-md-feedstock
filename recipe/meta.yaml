@@ -29,6 +29,8 @@ requirements:
     - google-colab
     - dataclasses
     - jraph
+    - optax
+    - ml-collections
 
 test:
   imports:
