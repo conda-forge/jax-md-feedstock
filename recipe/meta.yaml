@@ -33,6 +33,7 @@ requirements:
     - ml-collections
     - einops
     - e3nn-jax
+    - flax
 
 test:
   imports:
