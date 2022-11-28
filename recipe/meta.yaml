@@ -31,7 +31,6 @@ requirements:
     - jraph
     - optax
     - ml-collections
-    - e3nn-jax
     - einops
 
 test:
