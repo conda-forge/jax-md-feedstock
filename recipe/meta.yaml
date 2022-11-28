@@ -31,6 +31,7 @@ requirements:
     - jraph
     - optax
     - ml-collections
+    - e3nn-jax
 
 test:
   imports:
