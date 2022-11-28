@@ -1,5 +1,5 @@
 {% set name = "jax-md" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jax-md-{{ version }}.tar.gz
-  sha256: 21f100b586295f601eda64367e6a36d25c9d57b302687647bf4aed9717574486
+  sha256: 6216173612871f6a378552ee7ee8eac75bb2e44bc307b9665f01bfba8e4c5294
 
 build:
   number: 0
@@ -29,6 +29,8 @@ requirements:
     - google-colab
     - dataclasses
     - jraph
+    - optax
+    - ml-collections
 
 test:
   imports:
