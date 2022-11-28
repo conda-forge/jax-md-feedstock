@@ -32,6 +32,7 @@ requirements:
     - optax
     - ml-collections
     - e3nn-jax
+    - einops
 
 test:
   imports:
