@@ -1,11 +1,11 @@
-About jax-md
-============
+About jax-md-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jax-md-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/google/jax-md
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jax-md-feedstock/blob/main/LICENSE.txt)
 
 Summary: Accelerated, Differentiable, Molecular Dynamics
 
