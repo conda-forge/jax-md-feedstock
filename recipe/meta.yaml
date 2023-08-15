@@ -1,5 +1,5 @@
 {% set name = "jax-md" %}
-{% set version = "0.2.7" %}
+{% set version = "0.2.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jax-md-{{ version }}.tar.gz
-  sha256: b998fa1057f5bd72f6b827795bb0de0a1dbf65eb15d6d8da94f45047a3f91289
+  sha256: ad74e443c8e89933e38b0e2654b52f7f5aeabbd81a0934c765f09417eaa2e95b
 
 build:
   number: 0
