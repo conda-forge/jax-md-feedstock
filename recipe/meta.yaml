@@ -6,26 +6,26 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jax-md-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jax-md-{{ version }}.tar.gz
   sha256: ad74e443c8e89933e38b0e2654b52f7f5aeabbd81a0934c765f09417eaa2e95b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >3.5
+    - python {{ python_min }}
   run:
     - absl-py
     - dataclasses
     - dm-haiku >=0.0.2
-    - jax >=0.1.73
+    - jax >=0.1.73,<=0.4.23
     - jaxlib >=0.1.52
     - numpy
-    - python >3.5
+    - python >={{ python_min }}
     - google-colab
     - dataclasses
     - jraph
@@ -33,7 +33,8 @@ requirements:
     - ml-collections
     - einops
     - e3nn-jax
-    - flax
+    - flax <0.8
+    - scipy <1.13
 
 test:
   imports:
@@ -42,6 +43,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/google/jax-md
