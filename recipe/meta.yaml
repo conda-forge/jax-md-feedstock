@@ -22,7 +22,7 @@ requirements:
     - absl-py
     - dataclasses
     - dm-haiku >=0.0.2
-    - jax >=0.1.73
+    - jax >=0.1.73,<=0.4.23
     - jaxlib >=0.1.52
     - numpy
     - python >={{ python_min }}
