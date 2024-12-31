@@ -33,7 +33,7 @@ requirements:
     - ml-collections
     - einops
     - e3nn-jax
-    - flax
+    - flax <0.8
     - scipy <1.13
 
 test:
