@@ -1,28 +1,30 @@
 {% set name = "jax-md" %}
-{% set version = "0.2.8" %}
+{% set version = "0.2.25" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jax-md-{{ version }}.tar.gz
-  sha256: ad74e443c8e89933e38b0e2654b52f7f5aeabbd81a0934c765f09417eaa2e95b
+  url: https://github.com/google/{{ name }}/archive/jax-md-v{{ version }}.tar.gz
+  sha256: ca5474877524688fdabf9545acaa3dd8d88f0af289ecc689e96e10cf5d08ee4f
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
+    - setuptools  # Build backend für pip
     - python {{ python_min }}
   run:
     - absl-py
     - dataclasses
     - dm-haiku >=0.0.2
-    - jax >=0.1.73,<=0.4.23
+    - jax 
     - jaxlib >=0.1.52
     - numpy
     - python >={{ python_min }}
@@ -33,8 +35,10 @@ requirements:
     - ml-collections
     - einops
     - e3nn-jax
-    - flax <0.8
-    - scipy <1.13
+    - flax
+    - scipy
+    - frozendict
+    - pymatgen
 
 test:
   imports:
