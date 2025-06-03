@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/google/{{ name }}/archive/refs/tags/jax-md-v{{ version }}.tar.gz
-  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  url: https://github.com/google/{{ name }}/archive/jax-md-v{{ version }}.tar.gz
+  sha256: ca5474877524688fdabf9545acaa3dd8d88f0af289ecc689e96e10cf5d08ee4f
 
 build:
   number: 0
