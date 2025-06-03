@@ -24,7 +24,7 @@ requirements:
     - absl-py
     - dataclasses
     - dm-haiku >=0.0.2
-    - jax >=0.1.73,<=0.4.23
+    - jax 
     - jaxlib >=0.1.52
     - numpy
     - python >={{ python_min }}
@@ -35,8 +35,8 @@ requirements:
     - ml-collections
     - einops
     - e3nn-jax
-    - flax <0.8
-    - scipy <1.13
+    - flax
+    - scipy
 
 test:
   imports:
