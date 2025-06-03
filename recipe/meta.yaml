@@ -37,6 +37,8 @@ requirements:
     - e3nn-jax
     - flax
     - scipy
+    - frozendict
+    - pymatgen
 
 test:
   imports:
