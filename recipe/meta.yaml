@@ -1,5 +1,6 @@
 {% set name = "jax-md" %}
 {% set version = "0.2.25" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
