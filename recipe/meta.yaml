@@ -1,5 +1,5 @@
 {% set name = "jax-md" %}
-{% set version = "0.2.25" %}
+{% set version = "0.2.26" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/google/{{ name }}/archive/jax-md-v{{ version }}.tar.gz
-  sha256: ca5474877524688fdabf9545acaa3dd8d88f0af289ecc689e96e10cf5d08ee4f
+  sha256: 7720601041109eaa319a3e12030182d577a1bca078a841b503b3e30f054d3ce1
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - absl-py
     - dataclasses
     - dm-haiku >=0.0.2
-    - jax 
+    - jax
     - jaxlib >=0.1.52
     - numpy
     - python >={{ python_min }}
