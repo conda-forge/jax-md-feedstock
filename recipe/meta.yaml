@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - setuptools  # Build backend für pip
+    - hatchling
     - python {{ python_min }}
   run:
     - absl-py
