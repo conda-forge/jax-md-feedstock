@@ -1,5 +1,5 @@
 {% set name = "jax-md" %}
-{% set version = "0.2.26" %}
+{% set version = "0.2.27" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/google/{{ name }}/archive/jax-md-v{{ version }}.tar.gz
-  sha256: 7720601041109eaa319a3e12030182d577a1bca078a841b503b3e30f054d3ce1
+  sha256: f4ac714b00271846410a084cfe295e80a5acf2e5347a4468038925b727dd61fb
 
 build:
   number: 0
